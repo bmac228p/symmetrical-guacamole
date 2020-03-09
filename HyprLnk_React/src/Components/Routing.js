@@ -26,7 +26,8 @@ function Page() {
 
   return (
     <div>
-      {items.map(item => (<h1>
+      {items.map(item => (
+        <h1 key={item}>
         <Link to={`/Page/${item}`}>{item}</Link>
         </h1>
       ))}
