@@ -1,5 +1,5 @@
 import React from 'react';
-import Page from './Components/Routing';
+import Page from './Components/UniqueLinks';
 import './App.css';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 
