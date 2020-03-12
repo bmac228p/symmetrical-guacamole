@@ -1,6 +1,5 @@
 import React from 'react';
-import firebase from '../lib/firebase';
-import {Redirect} from 'react-router-dom';
+import firebase from '../firebase/firebase';
 
 class createEvents extends React.Component{
     constructor(props){
@@ -81,13 +80,13 @@ class createEvents extends React.Component{
               onChange={this.handleDateChange}
             />
             <h3 className="createEvents">Price:</h3>
-            <time
+            <input
                 type="text"
                 value={this.state.price}
                 onChange={this.handlePriceChange}
             />
             <h3 className="createEvents">Description:</h3>
-            <time
+            <input
                 type="text"
                 value={this.state.description}
                 onChange={this.handleDescriptionChange}
@@ -105,6 +104,3 @@ class createEvents extends React.Component{
 }
 
 export default createEvents;
-
-    
-    
