@@ -81,7 +81,7 @@ class createEvents extends React.Component{
             />
             <h3 className="createEvents">Price:</h3>
             <input
-                type="text"
+                type="number"
                 value={this.state.price}
                 onChange={this.handlePriceChange}
             />
