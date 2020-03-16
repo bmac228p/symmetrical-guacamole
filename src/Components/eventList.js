@@ -33,7 +33,7 @@ const useStyles = makeStyles(theme => ({
  *   {
  *     img: image,
  *     title: 'Image',
- *     author: 'author',
+ *     date: 'date',
  *   },
  *   {
  *     [etc...]
