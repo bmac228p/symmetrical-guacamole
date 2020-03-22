@@ -10,9 +10,9 @@ function Page() {
           const db = firebase.firestore();
           (db.collection("events").get().then(items => {
           const docData = items.docs;
-          const data = docData.map(doc => doc.id);
-          setItems(data);
-        console.log(data);
+          const data = docData.map(doc => doc.id.slice(0,5));
+          setItems(data.slice(0,5));
+        console.log(data.slice(0,5));
   }));
 }, []);    
 
