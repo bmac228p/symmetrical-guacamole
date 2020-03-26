@@ -51,7 +51,7 @@ export default function EventList() {
         </GridListTile>
         {eventData.map(tile => (
           <GridListTile key={tile.img}>
-            <img src={tile.img} alt={tile.title} />
+            <img src={"https://blogmedia.evbstatic.com/wp-content/uploads/wpmulti/sites/8/shutterstock_199419065.jpg"} alt={tile.title} />
             <GridListTileBar
               title={tile.title}
               subtitle={<span>{tile.date}</span>}
